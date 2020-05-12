@@ -1,0 +1,23 @@
+.button {
+    width: 100px;
+    height: 35px;
+}
+
+input {
+    width: 100px;
+    height: 35px;
+}
+
+.login-page {
+    width: 640px;
+    height: 480px;
+    border: 5px solid green;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+}
+
+form {
+    margin: 10px auto;
+}
