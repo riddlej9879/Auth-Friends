@@ -10,17 +10,18 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ul>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            {/* Should change vvv below */}
-            <Link to="/protected">Protected Page</Link>
-          </li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            {/* <li>
+              <Link to="/friends">Protected Page</Link>
+            </li> */}
+          </ul>
+        </nav>
         <Switch>
-          <PrivateRoute exact path='/protected' component={Friends} />
+          <PrivateRoute exact path='/friends' component={Friends} />
           <Route path='login' component={Login} />
           <Route component={Login} />
         </Switch>

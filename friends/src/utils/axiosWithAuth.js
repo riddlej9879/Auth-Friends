@@ -4,7 +4,7 @@ import axios from "axios";
 // if we dont do this, we make a new instance every time we do an axios call
 // which is very inefficient
 
-export const axiosWithAuth = () => {
+export const axiosWithAuth = () => {  
   const token = localStorage.getItem("token");
   console.log(token)
 
